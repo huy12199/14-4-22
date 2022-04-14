@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>Hàm <b>call()</b> dùng để thực thi một hàm nào đó với các tham số truyền vào (nếu có),<br />hàm này được tích hợp sẵn trong các đối tượng là function.</p>
+
+<script>
+    function car(brand, name, weight){
+        console.log(brand);
+        console.log(name);
+        console.log(weight + " kg");
+        return this;
+    }
+
+    // Gọi hàm theo cách thông thường
+    var myCar1 = car("Toyota", "Prius 2018", 850);
+
+    // Gọi hàm sử dụng method call()
+    var myCar2 = car.call(car, "Toyota", "Prius 2018", 850);
+</script>
+
+</body>
+</html>

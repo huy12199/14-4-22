@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+
+   a = prompt("nhập a:")
+   b = prompt("nhập b.")
+   c = prompt("nhap c.")
+
+    if (a == 0) {
+        if (b == 0) {
+            if (c == 0) {
+                alert("phương trình vô số nghiệm")
+            } else {
+                alert("phương trình vô nghiệm ")
+            }
+        } else {
+           alert("nghiệm của phương trình:= "+ -c/b)
+        }
+    } else {
+        d = b*b-4*a*c
+        if (d < 0) {
+            alert("nghiện của phương trình vô nghiệm ")
+        }
+        if (d > 0) {
+            x1 = (-b + Math.sqrt(d))/(2*a)
+            x2 = (-b - Math.sqrt(d))/(2*a)
+            alert( "nghiệm của phương trinh là: =" + x1)
+            alert( "nghiệm của phương trinh là: =" + x2)
+        }
+        if (d == 0) {
+            x =-b/2*a
+            alert("nghiệm của phương trình là:=" + x )
+        }
+    }
+
+
+</script>
